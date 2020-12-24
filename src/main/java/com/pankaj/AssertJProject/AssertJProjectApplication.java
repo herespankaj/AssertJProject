@@ -26,6 +26,9 @@ public class AssertJProjectApplication {
 		
 		assertThat(le.get(1).getName()).isEqualTo("Pankaj"); 
 		assertThat(le.get(3).getName()).isEqualTo("Pankaj"); 
+		
+		assertThat(le.get(5).getName()).isEqualTo("Nilu").isNotNull(); 
+		
 
 	}
 	
