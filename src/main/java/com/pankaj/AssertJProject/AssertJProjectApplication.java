@@ -13,7 +13,8 @@ import static org.assertj.core.api.Assertions.*;
 @SpringBootApplication
 public class AssertJProjectApplication {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
+		
 		SpringApplication.run(AssertJProjectApplication.class, args);
 		
 		List<Employee> le = new ArrayList<>();
@@ -27,6 +28,9 @@ public class AssertJProjectApplication {
 		assertThat(le.get(1).getName()).isEqualTo("Pankaj"); 
 		assertThat(le.get(3).getName()).isEqualTo("Pankaj"); 
 
+		assertThat(le.get(4).getName()).isEqualTo("Nilu");
+		assertThat(le.get(3).getName()).isEqualTo("Pankaj");
+		
 	}
 	
 	
